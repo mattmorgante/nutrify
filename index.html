@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nutrify</title>
+</head>
+
+<nav>
+    <h1>Flexbox Flexxer</h1>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+    </ul>
+</nav>
+<body>
+    <div class="container">
+        <div class="widget">Fast Facts</div>
+        <div class="widget">Macros/Micros</div>
+        <div class="widget">Photos</div>
+        <div class="widget">Ingredients</div>
+        <div class="widget">Instructions</div>
+        <div class="widget">Notes</div>
+        <div class="widget"></div>
+        <div class="widget">8</div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_widget">More like this</div>
+        <div class="footer_widget">Share/Like</div>
+    </div>
+</body>
+<style>
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li {
+        padding: 10px;
+
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid red;
+        padding: 0;
+        list-style: none;
+        background-color: #e8e8e9;
+    }
+    .widget {
+        display: flex;
+        justify-content: center;
+        background-color: #8cacea;
+        width: 400px;
+        height: 400px;
+        margin: 8px;
+        padding: 4px;
+    }
+
+    .footer {
+        margin: 20px;
+        display: flex;
+    }
+
+    .footer_widget {
+        display: flex;
+        width: 100%;
+        border: 1px solid grey;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+</html>
